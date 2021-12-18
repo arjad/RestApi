@@ -1,7 +1,7 @@
-const http = require("https")
+const http = require("https");
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
 const app = express();
 require("dotenv/config");
 
@@ -11,7 +11,6 @@ const postsRoute = require("./routes/post")
 app.use("/post",postsRoute)
 app.get("/",(req,res)=>{
     res.send("we are on home");
-    
 })
 
 // connect to db
